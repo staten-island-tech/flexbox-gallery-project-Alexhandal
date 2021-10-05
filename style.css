@@ -5,6 +5,7 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-size: 62.5%; /* Normally 100% is 16 px we want the size to be 10px so we do 62.5% */
+  background-color: grey;
 }
 .parent {
   font-size: 20px;
@@ -21,6 +22,15 @@ h2 {
 .em-size {
   font-size: 1em;
 }
+.main-header {
+  font-size: 10em;
+  text-align: center;
+  color: black;
+  border: 1rem solid black;
+  margin-left: 50rem;
+  margin-right: 50rem;
+  margin-top: 10rem;
+}
 
 .parent {
   font-size: 30px;
@@ -34,15 +44,14 @@ h2 {
 }
 .child-1 {
   border: 3px solid green;
-  height: 350px;
+  height: 300px;
 }
 .child-2 {
   border: 3px solid yellow;
   height: 500px;
-  flex-grow: 2;
 }
 .child-3 {
   border: 3px solid blue;
   height: 600;
-  flex-grow: 2;
+  flex-grow: 1;
 }
