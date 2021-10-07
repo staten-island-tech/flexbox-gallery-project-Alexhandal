@@ -8,22 +8,9 @@ body,
 }
 body {
   background-color: grey;
+  font-family: 'Titillium Web', sans-serif;
 }
-.parent {
-  font-size: 20px;
-}
-h2 {
-  margin: 1rem;
-}
-.px-size {
-  font-size: 20px;
-}
-.rem-size {
-  font-size: 2rem;
-}
-.em-size {
-  font-size: 1em;
-}
+
 .main-header {
   font-size: 10em;
   text-align: center;
@@ -51,6 +38,7 @@ h2 {
   margin-bottom: 5rem;
   text-align: center;
   background-color: lightgrey;
+  box-shadow: 4px 4px 8px;
 }
 .child-2 {
   border: 3px solid white;
@@ -58,6 +46,7 @@ h2 {
   margin-bottom: 5rem;
   text-align: center;
   background-color: lightgrey;
+  box-shadow: 4px 4px 8px;
 }
 
 .img-1 {
@@ -71,4 +60,9 @@ h2 {
   margin-top: 1.75em;
   width: 35em;
   height: 20em;
+}
+
+.adult-1 {
+  margin-top: 1.5rem;
+  font-size: 1em;
 }
