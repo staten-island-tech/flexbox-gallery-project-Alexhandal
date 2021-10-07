@@ -5,6 +5,8 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-size: 62.5%; /* Normally 100% is 16 px we want the size to be 10px so we do 62.5% */
+}
+body {
   background-color: grey;
 }
 .parent {
@@ -36,30 +38,37 @@ h2 {
 .parent {
   font-size: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .child {
-  border: 1px solid red;
   width: 28%;
 }
-.child-1 {
+.child-1,
+.child-3 {
   border: 3px solid black;
-  height: 300px;
-  margin-left: 10rem;
+  height: 350px;
   margin-bottom: 5rem;
+  text-align: center;
+  background-color: lightgrey;
 }
 .child-2 {
   border: 3px solid white;
-  height: 300px;
+  height: 350px;
   margin-bottom: 5rem;
+  text-align: center;
+  background-color: lightgrey;
 }
-.child-3 {
-  border: 3px solid black;
-  height: 300;
-  margin-right: 10rem;
-  margin-bottom: 5rem;
-}
+
 .img-1 {
-  border: white;
+  border: 5px solid white;
+  margin-top: 1.75em;
+  width: 35em;
+  height: 20em;
+}
+.img-2 {
+  border: 5px solid black;
+  margin-top: 1.75em;
+  width: 35em;
+  height: 20em;
 }
