@@ -46,3 +46,12 @@ body {
   margin-top: 1.75em;
   margin-bottom: 1.75em;
 }
+.child-1:hover {
+  transform: scale(1.15);
+}
+.child-2:hover {
+  transform: scale(1.15);
+}
+.child-3:hover {
+  transform: scale(1.15);
+}
