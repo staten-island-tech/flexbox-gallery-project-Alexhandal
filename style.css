@@ -23,7 +23,7 @@ body {
 }
 
 .parent {
-  font-size: 50px;
+  font-size: 5rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -40,8 +40,8 @@ body {
 }
 
 #img-2 {
-  width: 25rem;
-  height: 25rem;
+  width: 16em;
+  height: 13em;
   border: 5px solid black;
   margin-top: 1.75em;
   margin-bottom: 1.75em;
@@ -54,4 +54,15 @@ body {
 }
 .child-3:hover {
   transform: scale(1.15);
+}
+.main-header:hover {
+  transform: scale(1.25);
+}
+.main-header {
+  transition: all 0.3s ease-in;
+}
+
+#img-2:hover {
+  transform: scale(1.1);
+  outline: 0.5rem solid lightyellow;
 }
