@@ -46,15 +46,11 @@ body {
   margin-top: 1.75em;
   margin-bottom: 1.75em;
 }
-.child-1:hover {
+.child:hover {
   transform: scale(1.15);
+  transition: all 0.3s ease-in;
 }
-.child-2:hover {
-  transform: scale(1.15);
-}
-.child-3:hover {
-  transform: scale(1.15);
-}
+
 .main-header:hover {
   transform: scale(1.25);
 }
@@ -65,4 +61,43 @@ body {
 #img-2:hover {
   transform: scale(1.1);
   outline: 0.5rem solid lightyellow;
+  transition: all 0.3s ease-in;
+}
+.parent:hover .child:not(:hover) {
+  opacity: 0.3;
+  transform: scale(0.7);
+  transition: all 0.3s ease-in;
+}
+.animation {
+  height: 2rem;
+  width: 2rem;
+  animation: job 5s infinite;
+  position: absolute;
+}
+@keyframes job {
+  0% {
+    left: 50%;
+    bottom: 98%;
+    background-color: turquoise;
+  }
+  25% {
+    left: 45%;
+    bottom: 90%;
+    background-color: white;
+  }
+  50% {
+    left: 50%;
+    bottom: 98%;
+    background-color: turquoise;
+  }
+  75% {
+    left: 55%;
+    bottom: 90%;
+    background-color: white;
+  }
+  100% {
+    left: 50%;
+    bottom: 98%;
+    background-color: turquoise;
+  }
 }
