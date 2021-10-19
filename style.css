@@ -46,16 +46,30 @@ body {
   margin-top: 1.75em;
   margin-bottom: 1.75em;
 }
+.form::before {
+  content: "\2614";
+  font-size: 2rem;
+}
+.button {
+  font-size: 2rem;
+}
+.button:hover {
+  transform: scale(0.75);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid turquoise;
+}
 .child:hover {
   transform: scale(1.15);
   transition: all 0.3s ease-in;
+  border: 3px solid turquoise;
 }
 
 .main-header:hover {
   transform: scale(1.25);
+  filter: opacity(0);
 }
 .main-header {
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
 }
 
 #img-2:hover {
@@ -74,6 +88,9 @@ body {
   animation: job 5s infinite;
   position: absolute;
 }
+
+filter: grayscale(0);
+
 @keyframes job {
   0% {
     left: 50%;
