@@ -38,10 +38,14 @@ body {
   box-shadow: 4px 4px 8px;
   margin-bottom: 3em;
 }
+.adult-1{
+  border: 3px solid black;
+  margin: 7px 7px 7px 7px;
+}
 
 #img-2 {
   width: 16em;
-  height: 13em;
+  height: 20rem;
   border: 5px solid black;
   margin-top: 1.75em;
   margin-bottom: 1.75em;
@@ -52,16 +56,16 @@ body {
 }
 .button {
   font-size: 2rem;
+  box-shadow: 4px 4px 8px;
 }
 .button:hover {
   transform: scale(0.75);
   transition: all 0.3s ease-in-out;
-  border: 1px solid turquoise;
+  border: 2px solid turquoise;
 }
 .child:hover {
   transform: scale(1.15);
   transition: all 0.3s ease-in;
-  border: 3px solid turquoise;
 }
 
 .main-header:hover {
@@ -72,10 +76,13 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.adult-1:hover{
+  border: lightgray;
+}
+
 #img-2:hover {
-  transform: scale(1.1);
-  outline: 0.5rem solid lightyellow;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(100%);
 }
 .parent:hover .child:not(:hover) {
   opacity: 0.3;
@@ -88,8 +95,6 @@ body {
   animation: job 5s infinite;
   position: absolute;
 }
-
-filter: grayscale(0);
 
 @keyframes job {
   0% {
@@ -118,3 +123,20 @@ filter: grayscale(0);
     background-color: turquoise;
   }
 }
+
+@media (max-width: 1240px) {
+  .adult-1{
+    color: brown;
+  }
+}
+@media (max-width: 768px) {
+  .adult-1{
+    color: green;
+  }
+}
+@media (max-width: 390px){
+  .adult-1{
+    color: turquoise;
+  }
+}
+
