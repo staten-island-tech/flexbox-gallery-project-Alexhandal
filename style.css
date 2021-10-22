@@ -31,7 +31,7 @@ body {
 .child-2,
 .child-3 {
   width: 28%;
-  height: 55%;
+  height: 40rem;
   border: 3px solid black;
   text-align: center;
   background-color: lightgray;
@@ -43,9 +43,9 @@ body {
   margin: 7px 7px 7px 7px;
 }
 
-#img-2 {
-  width: 35rem;
-  height: 22rem;
+.images {
+  width: 75%;
+  height: 50%;
   border: 5px solid black;
   margin-top: 1.75em;
   margin-bottom: 1.75em;
