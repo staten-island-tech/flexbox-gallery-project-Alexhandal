@@ -12,14 +12,16 @@ body {
 }
 
 .main-header {
-  font-size: 10em;
+  font-size: 4rem;
   text-align: center;
   color: black;
   border: 1rem solid black;
-  margin-left: 50rem;
-  margin-right: 50rem;
-  margin-top: 10rem;
+  width: 40rem;
+  height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 5rem;
+ 
 }
 
 .parent {
@@ -28,9 +30,8 @@ body {
   justify-content: space-evenly;
 }
 .child-1,
-.child-2,
-.child-3 {
-  width: 28%;
+.child-2 {
+  width: 33rem;
   height: 40rem;
   border: 3px solid black;
   text-align: center;
@@ -47,8 +48,7 @@ body {
   width: 75%;
   height: 50%;
   border: 5px solid black;
-  margin-top: 1.75em;
-  margin-bottom: 1.75em;
+  
 }
 .form::before {
   content: "\2614";
@@ -125,41 +125,98 @@ body {
 }
 
 @media (max-width: 1240px) {
+ 
   .adult-1 {
     color: brown;
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
   }
-  #img-2 {
-    width: 60%;
-    height: 60%;
+  .images {
+    width: 17rem;
+    height: 17rem;
   }
   .main-header {
-    width: 80%;
-    height: 80%;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
   }
+  h1 {
+    font-size: 8rem;
+  }
+  .parent {
+    width: 40rem;
+    height: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12rem;
+  }
+  
+  
 }
 @media (max-width: 768px) {
   .adult-1 {
     color: green;
+    height: 17rem;
+    width: 11rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
   }
-  #img-2 {
-    width: 60%;
-    height: 60%;
+  .images {
+   margin-bottom: 1rem;
+    width: 10rem;
+   height: 15rem;
   }
   .main-header {
-    width: 80%;
-    height: 80%;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
   }
+  h1 {
+    font-size: 8rem;
+  }
+  .parent {
+    width: 40rem;
+    height: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+
+  }
+  
 }
-@media (max-width: 390px) {
+@media (max-width: 572px) {
   .adult-1 {
-    color: turquoise;
+    color: purple;
+    height: 12rem;
+    width: 12rem;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.10rem;
+    margin-bottom: 3rem;
   }
-  #img-2 {
-    width: 60%;
-    height: 60%;
+  .images {
+    margin-top: 1rem;
+   width: 10.25rem;
+   height: 17rem;
   }
   .main-header {
-    width: 80%;
-    height: 80%;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
   }
+  h1 {
+    font-size: 8rem;
+  }
+  .parent {
+    width: 40rem;
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14rem;
+  }
+  
 }
