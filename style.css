@@ -21,13 +21,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
- 
 }
 
 .parent {
   font-size: 5rem;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .child-1,
 .child-2 {
@@ -48,7 +48,6 @@ body {
   width: 75%;
   height: 50%;
   border: 5px solid black;
-  
 }
 .form::before {
   content: "\2614";
@@ -125,7 +124,6 @@ body {
 }
 
 @media (max-width: 1240px) {
- 
   .adult-1 {
     color: brown;
     height: 20rem;
@@ -145,14 +143,15 @@ body {
     font-size: 8rem;
   }
   .parent {
-    width: 40rem;
+    width: 25%;
     height: 40rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 12rem;
   }
-  
-  
+  .child {
+    width: 25%;
+  }
 }
 @media (max-width: 768px) {
   .adult-1 {
@@ -165,9 +164,9 @@ body {
     margin-bottom: 3rem;
   }
   .images {
-   margin-bottom: 1rem;
+    margin-bottom: 1rem;
     width: 10rem;
-   height: 15rem;
+    height: 15rem;
   }
   .main-header {
     height: 10rem;
@@ -178,14 +177,12 @@ body {
     font-size: 8rem;
   }
   .parent {
-    width: 40rem;
+    width: 65%;
     height: 40rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10rem;
-
   }
-  
 }
 @media (max-width: 572px) {
   .adult-1 {
@@ -195,13 +192,13 @@ body {
     margin-top: 0.5rem;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.10rem;
+    font-size: 1.1rem;
     margin-bottom: 3rem;
   }
   .images {
     margin-top: 1rem;
-   width: 10.25rem;
-   height: 17rem;
+    width: 10.25rem;
+    height: 17rem;
   }
   .main-header {
     height: 10rem;
@@ -218,5 +215,4 @@ body {
     margin-right: auto;
     margin-bottom: 14rem;
   }
-  
 }
