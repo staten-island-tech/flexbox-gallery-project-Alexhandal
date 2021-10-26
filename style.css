@@ -21,12 +21,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
+ 
 }
 
 .parent {
   font-size: 5rem;
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: center;
   flex-wrap: wrap;
 }
 .child-1,
@@ -48,6 +51,7 @@ body {
   width: 75%;
   height: 50%;
   border: 5px solid black;
+  
 }
 .form::before {
   content: "\2614";
@@ -123,96 +127,37 @@ body {
   }
 }
 
-@media (max-width: 1240px) {
-  .adult-1 {
-    color: brown;
-    height: 20rem;
-    width: 20rem;
-    text-align: center;
-  }
-  .images {
-    width: 17rem;
-    height: 17rem;
-  }
-  .main-header {
-    height: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  h1 {
-    font-size: 8rem;
-  }
-  .parent {
-    width: 25%;
-    height: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 12rem;
-  }
+@media(max-width: 1200px){
   .child {
-    width: 25%;
+width: 25%;
+color: green;
+  }
+  .adult-1{
+    font-size: 1.8rem;
   }
 }
-@media (max-width: 768px) {
-  .adult-1 {
-    color: green;
-    height: 17rem;
-    width: 11rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.25rem;
-    margin-bottom: 3rem;
+
+@media(max-width: 800px){
+  .child {
+    width: 51%;
+  color: purple;
+}
+.adult-1{
+  font-size: 1.9rem;
+}
+}
+@media(max-width: 400px){
+  .child{
+    color: brown;
   }
-  .images {
-    margin-bottom: 1rem;
-    width: 10rem;
-    height: 15rem;
+  .adult-1{
+    font-size: 1.7rem;
   }
-  .main-header {
-    height: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  h1 {
-    font-size: 8rem;
-  }
-  .parent {
-    width: 65%;
-    height: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10rem;
+  .main-header{
+   width: 75%;
+   font-size: 2rem;
   }
 }
-@media (max-width: 572px) {
-  .adult-1 {
-    color: purple;
-    height: 12rem;
-    width: 12rem;
-    margin-top: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.1rem;
-    margin-bottom: 3rem;
-  }
-  .images {
-    margin-top: 1rem;
-    width: 10.25rem;
-    height: 17rem;
-  }
-  .main-header {
-    height: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  h1 {
-    font-size: 8rem;
-  }
-  .parent {
-    width: 40rem;
-    height: 30rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 14rem;
-  }
-}
+
+
+
