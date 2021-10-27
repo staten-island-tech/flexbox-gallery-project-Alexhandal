@@ -21,7 +21,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
- 
 }
 
 .parent {
@@ -51,7 +50,6 @@ body {
   width: 75%;
   height: 50%;
   border: 5px solid black;
-  
 }
 .form::before {
   content: "\2614";
@@ -127,37 +125,37 @@ body {
   }
 }
 
-@media(max-width: 1200px){
+@media (max-width: 1200px) {
   .child {
-width: 25%;
-color: green;
+    width: 25%;
+    color: green;
   }
-  .adult-1{
+  .adult-1 {
     font-size: 1.8rem;
   }
 }
 
-@media(max-width: 800px){
+@media (max-width: 800px) {
   .child {
     width: 51%;
-  color: purple;
+    color: purple;
+  }
+  .adult-1 {
+    font-size: 1.9rem;
+  }
 }
-.adult-1{
-  font-size: 1.9rem;
-}
-}
-@media(max-width: 400px){
-  .child{
+@media (max-width: 400px) {
+  .child {
     color: brown;
   }
-  .adult-1{
-    font-size: 1.7rem;
+  .adult-1 {
+    font-size: 1.4rem;
   }
-  .main-header{
-   width: 75%;
-   font-size: 2rem;
+  .main-header {
+    width: 75%;
+    font-size: 2rem;
+  }
+  .images {
+    height: 35%;
   }
 }
-
-
-
