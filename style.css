@@ -7,7 +7,7 @@ body,
   font-size: 62.5%; /* Normally 100% is 16 px we want the size to be 10px so we do 62.5% */
 }
 body {
-  background-color: grey;
+  background-color:white;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -90,40 +90,6 @@ body {
   transform: scale(0.7);
   transition: all 0.3s ease-in;
 }
-.animation {
-  height: 2rem;
-  width: 2rem;
-  animation: job 5s infinite;
-  position: absolute;
-}
-
-@keyframes job {
-  0% {
-    left: 50%;
-    bottom: 98%;
-    background-color: turquoise;
-  }
-  25% {
-    left: 45%;
-    bottom: 90%;
-    background-color: white;
-  }
-  50% {
-    left: 50%;
-    bottom: 98%;
-    background-color: turquoise;
-  }
-  75% {
-    left: 55%;
-    bottom: 90%;
-    background-color: white;
-  }
-  100% {
-    left: 50%;
-    bottom: 98%;
-    background-color: turquoise;
-  }
-}
 
 @media (max-width: 1200px) {
   .child {
@@ -162,97 +128,70 @@ body {
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap');
+:root {
+  --black: #000;
+  --light-blue: #2998ff;
+  --dark-blue: #135cc5;
+  --light-red: #f87171;
+  --dark-red: #dc2626;
+  --gray: #252c30;
+  --green: #7CFc00;
+  --purple:	#BA55D3;
+  --white:#fff;
 
-*{
-  font-family: 'Nunito', sans-serif;
-  margin:0; padding: 0px;
-  box-sizing: border-box;
+  /*Intentions */
+  --primary: var(--purple);
+  --secondary: var(--purple);
+
+  /*Typography */
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+}
+.warm {
+  --primary: var(--purple);
+  --secondary: var(--white);
+  --trey: var(--black);
+}
+.cool {
+  --primary: var(--white);
+  --secondary: var(--light-blue);
+  --trey:var(--black);
+}
+.main-header {
+  background-color: var(--primary);
+}
+.child {
+  background-color: var(--primary);
+
+}
+.cool{
+  background-color: var(--trey);
+}
+
+
+.btn,
+.btn:link,
+.btn:visited {
   text-transform: uppercase;
-  transition:all .2s linear;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
 }
-
-:root{
-  --main-color:#8e44ad;
-}
-
-.container{
-  min-height: 100vh;
-  background: var(--main-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 80px;
-}
-
-.container h1{
-  color: var(--main-color);
-  background: #fff;
-  box-shadow: 0 10px 15px rgba(0,0,0,.3);
-  border-radius: 10px;
-  font-size: 6em;
-  padding: .5em .8em;
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 
-.color-switcher{
-  position: fixed;
-  top:25px; right: -200px;
-  width:200px;
-  padding:10px;
-  background: #fff;
-  z-index: 1000;
-}
-
-.color-switcher.active{
-  right:0px;
-}
-
-.color-switcher h3{
-  color:var( --main-color);
-  font-size:20px;
-  margin-bottom: 10px;
-  border-bottom:1px solid black;
-  padding: 5px 0;
+.btn{
   text-align: center;
-}
-
-.color-switcher .switcher-btn{
-  position: absolute;
-  top:0; left: -75px;
-  color:var(--main-color);
-  background: #fff;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 35px;
-}
-
-
-.color-switcher .switching-btn i{
-  animation: rotate 2s linear infinite;
-}
-
-@keyframes rotate{
-  100%{
-    transform: rotate(360deg);
-  }
-}
-
-
-
-.color-switcher .theme-buttons-cointainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-
-
-.color-switcher .theme-buttons-cointainer .theme-buttons{
-  display: block;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  margin: 5px;
-  cursor: pointer;
+  margin-left: 60rem;
 }
